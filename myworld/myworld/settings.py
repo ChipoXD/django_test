@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'members.apps.MembersConfig',
+    'myupload.apps.MyuploadConfig',
 ]
 
 MIDDLEWARE = [
@@ -76,11 +77,8 @@ WSGI_APPLICATION = 'myworld.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ChipoXD$test',
-        'USER': 'ChipoXD',
-        'PASSWORD': '9Dy6KAv6!Mmx57t',
-        'HOST': 'ChipoXD.mysql.pythonanywhere-services.com',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
